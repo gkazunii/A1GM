@@ -1,6 +1,3 @@
-include("make_mtx.jl")
-include("WNMF.jl")
-using BenchmarkTools
 using LinearAlgebra
 
 function exact_sol(X,Y,Z)
@@ -63,7 +60,7 @@ function A1GM(T, W; basis=false)
         h = hb[1:sumb2]
         a = wa[sumb1+1:end]
         b = hb[sumb2+1:end]
-        return w,h,a,b
+        return [w; a] ./sum(wa), [h' b']
     else
         return T
     end
