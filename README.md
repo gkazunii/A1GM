@@ -11,7 +11,7 @@ All other files are for experiments in our paper.
 ## Usage
 The proposed algorithm A1GM is given in `src/A1GM.jl`.
 The input is non-negative matrix `X` and binary weight `W`.
-`W[i,j] = 0` if `X[i,j]` is missing value, otherwise `0`.
+`W[i,j] = 0` if `X[i,j]` is missing value, otherwise `1`.
 Note that A1GM does not requrie any hyper-paramters.
 On the command line, we can use the algorithm as follows.
 ```julia
