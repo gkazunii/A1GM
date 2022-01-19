@@ -5,6 +5,7 @@ A1GM is an efficient rank-1 decomposition algorithm for non-negative matrix with
 
 ## Requirements
 A1GM is implemented in Julia 1.6.1.
+
 We need only `src/A1GM.jl` to run A1GM.
 All other files are for experiments in our paper.
 
@@ -33,14 +34,14 @@ julia> rank(R)
 
 If we need factors instaed of reconstructed matrix, we can use `basis` option.
 ```julia
->julia A,B = A1GM(X,W,basis=true)
+julia> A, B = A1GM(X,W,basis=true)
 ```
 The reconstracted matrix `R` is the same as the Kronecker product of A and B,`kron(A,B)`. 
-Note that if `W` is grid-like, `A1GM(X, W)` returns the best rank-1 approximation of `X`, minimizing weighted KL divergence from `X`.
+Note that if `W` is grid-like, `A1GM(X, W)` returns the best rank-1 approximation of `X`, minimizing the weighted KL divergence from `X`.
 You can find the algorithm of A1GM in our paper.
 
 ## Closed formula of the best rank-1 NMMF
-We also provide the function `rank1_NMMF()` which finds the best rank-1 Non-Negative Multiple Matrix Factorization([[NMMF]](https://www.ijcai.org/Proceedings/13/Papers/254.pdf)). The solution formula is the theoretical contribution of our paper, and `A1GM` is an application of it.
+We also provide here the function `rank1_NMMF()` which finds the best rank-1 Non-Negative Multiple Matrix Factorization([NMMF](https://www.ijcai.org/Proceedings/13/Papers/254.pdf)). The solution formula is the theoretical contribution of our paper, and `A1GM` is an application of it.
 ```julia
 function rank1_NMMF(X,Y,Z)
     sumZ2 = sum(Z,dims=2)
@@ -58,7 +59,7 @@ end
 This is an example of factor sharing decomposition of random matrices `X`, `Y` and `Z`.
 ```julia
 $ julia
-julia> X = rand(5,4); Y = rand(6,4); Z = rand(5,3)
+julia> X = rand(5,4); Y = rand(6,4); Z = rand(5,3);
 julia> w,h,a,b = rank1_NMMF(X,Y,Z)
 ```
 These factors, `w`,`h`,`a` and `b` globally minimizes the weighted KL cost funtion which `kron(w,h)` approximates `X`, `kron(a,h)` approximates `Y` and `kron(w,b)` approximates `Z`. See more details in Theorem 1 in our paper.
