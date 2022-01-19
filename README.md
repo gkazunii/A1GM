@@ -77,7 +77,7 @@ The following commands
 cd plot
 $ julia plot.jl
 ```
-make png images from jld2 files. The generated pdf files will be saved in `/png`.
+make png images from jld2 files. The generated pdf files will be saved in `/pngs`.
 We can modify experimental conditions and plot conditions by editing the file `config.jl`.
 ​
 
