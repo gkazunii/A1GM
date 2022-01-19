@@ -72,7 +72,7 @@ $ julia run.jl
 Results for synthetic datasets obtained by the above commands correspond to Fig. 5(a)(b) in our paper.
 Results will be saved in `../result` as jld2 files.
 ​
-The following commands
+ The following commands
 ```
 cd plot
 $ julia plot.jl
