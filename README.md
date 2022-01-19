@@ -61,7 +61,7 @@ $ julia
 julia> X = rand(5,4); Y = rand(6,4); Z = rand(5,3);
 julia> w,h,a,b = rank1_NMMF(X,Y,Z)
 ```
-These factors, `w`,`h`,`a` and `b` globally minimizes the weighted KL cost funtion which `kron(w,h)` approximates `X`, `kron(a,h)` approximates `Y` and `kron(w,b)` approximates `Z`. See more details in Theorem 1 in our paper.
+These factors, `w`,`h`,`a` and `b` globally minimize the weighted KL cost funtion which `kron(w,h)` approximates `X`, `kron(a,h)` approximates `Y` and `kron(w,b)` approximates `Z`. See more details in Theorem 1 in our paper.
 
 ## Experiments in the paper
 Our experiments on synthetic datasets can be performed from the command line as follows.
