@@ -1,11 +1,10 @@
 # A1GM
 A1GM is an efficient rank-1 decomposition algorithm for non-negative matrix with missing values. 
 
-* Ghalamkari, K., Sugiyama, M. : **Fast Rank-1 NMF for Missing Data with KL Divergence**, NeurIPS 2021 (to appear). [[arXiv]](https://arxiv.org/abs/2110.12595)
+* Ghalamkari, K., Sugiyama, M. : **Fast Rank-1 NMF for Missing Data with KL Divergence**, AISTATS 2022 (to appear). [[arXiv]](https://arxiv.org/abs/2110.12595)
 
 ## Requirements
-A1GM is implemented in Julia 1.6.1.
-
+A1GM is implemented in Julia 1.6.1.  
 We need only `src/A1GM.jl` to run A1GM.
 All other files are for experiments in our paper.
 
@@ -78,7 +77,7 @@ The following commands
 cd plot
 $ julia plot.jl
 ```
-make png images from jld2 files. The generated pdf files will be saved in `\png`.
+make png images from jld2 files. The generated pdf files will be saved in `/png`.
 We can modify experimental conditions and plot conditions by editing the file `config.jl`.
 ​
 
@@ -105,4 +104,5 @@ Bibtex entry:
 ## Contact
 Author: Kazu Ghalamkari  
 Affiliation: National Institute of Informatics, Tokyo, Japan  
-E-mail: gkazu@nii.ac.jp
+E-mail: gkazu@nii.ac.jp  
+URL: [gkazu.info](http://gkazu.info)
