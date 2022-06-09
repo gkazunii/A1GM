@@ -1,7 +1,7 @@
 # A1GM
 A1GM is an efficient rank-1 decomposition algorithm for non-negative matrix with missing values. 
 
-* Ghalamkari, K., Sugiyama, M. : **Fast Rank-1 NMF for Missing Data with KL Divergence**, AISTATS 2022.[[paper]](https://proceedings.mlr.press/v151/ghalamkari22a.html) [[arXiv]](https://arxiv.org/abs/2110.12595) [[poster]](https://mahito.nii.ac.jp/pdf/Ghalamkari_AISTATS2022_poster.pdf)
+* Ghalamkari, K., Sugiyama, M. : **Fast Rank-1 NMF for Missing Data with KL Divergence**, AISTATS 2022.[[Paper]](https://proceedings.mlr.press/v151/ghalamkari22a.html) [[arXiv]](https://arxiv.org/abs/2110.12595) [[Poster]](https://mahito.nii.ac.jp/pdf/Ghalamkari_AISTATS2022_poster.pdf)
 
 ## Requirements
 A1GM is implemented in Julia 1.6.1.  
