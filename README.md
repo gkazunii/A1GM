@@ -1,7 +1,7 @@
 # A1GM
 A1GM is an efficient rank-1 decomposition algorithm for non-negative matrix with missing values. 
 
-* Ghalamkari, K., Sugiyama, M. : **Fast Rank-1 NMF for Missing Data with KL Divergence**, AISTATS 2022 (to appear). [[arXiv]](https://arxiv.org/abs/2110.12595) [[poster]](https://mahito.nii.ac.jp/pdf/Ghalamkari_AISTATS2022_poster.pdf)
+* Ghalamkari, K., Sugiyama, M. : **Fast Rank-1 NMF for Missing Data with KL Divergence**, AISTATS 2022.[[paper]](https://proceedings.mlr.press/v151/ghalamkari22a.html) [[arXiv]](https://arxiv.org/abs/2110.12595) [[poster]](https://mahito.nii.ac.jp/pdf/Ghalamkari_AISTATS2022_poster.pdf)
 
 ## Requirements
 A1GM is implemented in Julia 1.6.1.  
@@ -84,6 +84,9 @@ We can modify experimental conditions and plot conditions by editing the file `c
 For experiments with real datasets, real-world datasets have to be stored in `../../../datasets/matrix/` as jld2 files in advance. To access the files, `data_loader.jl` can be used.
 ​Please refer to the appendix for the information on how to obtain real datasets.
 
+
+## Typos in paper
+page 5 left column, **two**-body η-parameters do not change in the m-projection → **one**-body η-parameters do not change in the m-projection
 
 ## Citation
 If you use A1GM or the closed formula of the best rank-1 NMMF in a scientific publication, we would appreciate citations to the following paper:
