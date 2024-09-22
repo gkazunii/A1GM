@@ -90,7 +90,8 @@ page 5 left column, **two**-body η-parameters do not change in the m-projection
 
 ## Citation
 If you use A1GM or the closed formula of the best rank-1 NMMF in a scientific publication, we would appreciate citations to the following paper:
-* Ghalamkari, K., Sugiyama, M. : **Fast Rank-1 NMF for Missing Data with KL Divergence**, AISTATS 2022 (to appear).
+* Ghalamkari, K., Sugiyama, M. : **Fast Rank-1 NMF for Missing Data with KL Divergence**, AISTATS 2022.
+* Ghalamkari, K., Sugiyama, M. : **Non-negative Low-rank Approximations for Multi-dimensional Arrays on Statistical Manifold**, Information Geometry, 2023.
 
 Bibtex entry:
 ```
@@ -98,10 +99,18 @@ Bibtex entry:
     Author = {Ghalamkari, K. and Sugiyama, M.},
     Title = {Fast Rank-1 NMF for Missing Data with KL Divergence},
     Booktitle = {Proceedings of the 25th International Conference on Artificial Intelligence and Statistics},
-    Pages = {XX--XX},
+    Pages = {2927--2940},
     Address = {Virtual Event},
     Month = {March},
     Year = {2022}}
+
+@article{Ghalamkari2023Nonnegative,
+    Author = {Ghalamkari, K. and Sugiyama, M.},
+    Title = {Non-negative Low-rank Approximations for Multi-dimensional Arrays on Statistical Manifold},
+    Journal = {Information Geometry},
+    Volume = {6},
+    Pages = {257--292},
+    Year = {2023}}
 ```
 
 ## Contact
